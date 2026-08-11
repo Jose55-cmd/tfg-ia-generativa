@@ -1,0 +1,29 @@
+{
+  "project_name": "Pipeline Multimodal TFG",
+  "cases": {
+    "medical_avatar": {
+      "platform": "HeyGen",
+      "model_type": "Fotorrealista",
+      "voice_settings": {"pitch": "neutral", "speed": 0.9}
+    },
+    "library_blueprint": {
+      "platform": "Leonardo AI",
+      "params": {
+        "seed": 849201,
+        "controlnet": "Depth",
+        "weight": 0.75,
+        "sampler": "Euler Ancestral"
+      },
+      "positive_prompt": "(masterpiece, 8k resolution, architectural blueprint:1.3), modern public library interior, transparent holographic layout",
+      "negative_prompt": "(low resolution, deformed structures, text, watermarks, humans, noisy:1.3)"
+    },
+    "coffee_commercial": {
+      "platform": "Digen",
+      "motion_params": {
+        "camera": "pan right",
+        "fps_target": 60,
+        "upscaling": "4K_native"
+      }
+    }
+  }
+}
